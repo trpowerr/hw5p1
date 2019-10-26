@@ -1,15 +1,14 @@
 const numberOfThings = prompt('Введите колличество покупаемы едениц: ');
 
-export default function converter() {
-  if (+numberOfThings < 0 | numberOfThings != +numberOfThings) {
-    throw ('error');
+export default function converter(num) {
+  if (+num < 0 | num != +num) {
+    throw new Error('error');
   }
-  return numberOfThings;
+  return num;
 }
 
 try {
-  converter();
-  console.log(converter());
+  console.log(converter(numberOfThings));
 } catch (error) {
-  console.log('Неверный формат ввода!')
+  console.log('Неверный формат ввода!');
 }
