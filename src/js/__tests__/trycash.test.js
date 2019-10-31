@@ -8,10 +8,3 @@ test('should check value', () => {
   expect(received).toBe(expected);
 });
 
-// test('should check value', () => {
-//   const received = converter('ff');
-
-//   const expected = 'Неверный формат ввода!';
-
-//   expect(received).toBe(expected);
-// });
