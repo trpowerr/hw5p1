@@ -1,4 +1,4 @@
-import converter from '../trycash';
+import { numberOfThings, converter } from '../trycash';
 
 test('should check value', () => {
   const received = converter(10);
@@ -7,4 +7,10 @@ test('should check value', () => {
 
   expect(received).toBe(expected);
 });
+
+try {
+  console.log(converter(numberOfThings));
+} catch (error) {
+  console.log('Неверный формат ввода!');
+}
 
